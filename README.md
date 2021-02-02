@@ -1,2 +1,2 @@
-# dots
-https://alexandr-kiselev.github.io/dots/
+# move
+https://alexandr-kiselev.github.io/move/
