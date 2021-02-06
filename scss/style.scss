@@ -516,9 +516,27 @@ h3 {
         &:hover {
             background: $yellow;
             cursor: pointer;
+            color: $black;
+          
         }
     }
 
+}
+
+.feedback__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-height: 20px;
+    max-height: 100px;
+    transition: all 1s;
+   
+}
+.all-read {
+    display: block;
+    max-height: 400px;
 }
 .call-data {
     margin-top: 120px;

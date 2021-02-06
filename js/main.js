@@ -39,15 +39,40 @@ $(function () {
   });
 
 
-  $('.all-prise').click(function(){
-    $('.sm').slideToggle(1000);
-    return false;
-   });
+
  
+//для отзывов
+$(".btn-read").on("click", function (e) {
+    
+    var $this = $(this).prev('.feedback__text');
+    var $text = $(this);
+  
+        $this.toggleClass('all-read')
+        if ($this.is('.all-read')) {
+            $text.text('закрыть');
+        } else {
+            $text.text('читать полностью');
+        }
+
+});
+
+$('.feedback__btn-all').on('click', function () {
+
+  if ($(this).text() == 'Все отзывы') {
+      $(this).text('Отзывов больше нет');
+      $(this).css({'border':'none'});
+      
+  }
+  else {
+      $(this).text('Все отзывы');
+      $(this).css({'border':'1px solid #333'});
+  }
+});
 
 
-
-
+s = ' ';
+s = s.replace(/^\s+|\s+$/g, '');
+if(document.getElementById("only_num").value == s){alert("!!!");}
 
 
 const nextIcon = '<img src="./img/next.svg" alt:"right">';
