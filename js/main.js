@@ -68,11 +68,16 @@ $('.feedback__btn-all').on('click', function () {
       $(this).css({'border':'1px solid #333'});
   }
 });
+$('.all-prise').click(function(){
+  $('.sm').slideToggle(1000);
+  return false;
+ });
 
 
-s = ' ';
-s = s.replace(/^\s+|\s+$/g, '');
-if(document.getElementById("only_num").value == s){alert("!!!");}
+if(document.getElementById("only_num").value == s){
+  s = ' ';
+  s = s.replace(/^\s+|\s+$/g, '');
+}
 
 
 const nextIcon = '<img src="./img/next.svg" alt:"right">';
