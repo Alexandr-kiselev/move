@@ -92,7 +92,7 @@ h3 {
         display: flex;
         margin-top: 63px;
         position: relative;
-        background: url('../img/gazelle.png') no-repeat;
+        background: url('../img/gazelle.webp') no-repeat;
         background-position: top right -19px, bottom left, top left;
         .header-men {
             position: absolute;
@@ -178,16 +178,6 @@ h3 {
             margin-top: 13px;
         }
     }
-    &__right {
-        // position: relative;
-        // background: url('../img/gazelle.png') no-repeat;
-        // width: 678px;
-        // background-position: top right -19px, bottom left, top left;
-    }
-    // &__right img {
-    //     position: absolute;
-    //     top:-81px;
-    // }
     .cardc img {
         width: 50px;
     }
@@ -470,9 +460,6 @@ h3 {
 .feedback {
     background: $yellow;
     padding: 100px 0;
-    &__title {
-        // padding-top: 100px;
-    }
     &__subtitle {
         text-align: start;
         margin-bottom: 10px;
@@ -810,9 +797,6 @@ h3 {
     margin: 0px 0 11px 0px;
     justify-content: center;
 }
-// .header .contact .active {
-//     display: flex;
-// }
   .header__body .header-men {
     left: 301px;
   }
@@ -826,13 +810,13 @@ h3 {
   .prises__card {
     width: 49%;
     margin-bottom: 20px;
- }
- .feedback__cards {
-    flex-wrap: wrap;
-}
-.call-data {
-    margin-left: 0;
-}
+    }
+    .feedback__cards {
+        flex-wrap: wrap;
+    }
+    .call-data {
+        margin-left: 0;
+    }
 
 }
 @media (max-width: 776px){
@@ -841,8 +825,6 @@ h3 {
         margin-top: 24px;
     }
 }
-
-
 
 @media (max-width: 732px) {
     .motor__title  {
@@ -1041,9 +1023,6 @@ h3 {
         border:none;
         border-bottom: 1px solid #FFD101;
     }
-    // .owl-carousel .owl-nav {
-    //     display: none;
-    // }
     .motor__title-item, .motor__item {
         display: none;
     }
@@ -1071,7 +1050,6 @@ h3 {
         margin-bottom: 30px;
     }
     .motor__navigation {
-        /* text-align: center; */
         display: flex;
         justify-content: space-around;
     }
