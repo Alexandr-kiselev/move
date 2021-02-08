@@ -25,19 +25,7 @@ $(function () {
     let destination = $('#call').offset().top;
     $('body,html').animate({ scrollTop: destination }, 1500);
   });
-  //запрет букв для набора телефона
-  $("#only_num").keydown(function (event) {
-    if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
-      (event.keyCode == 65 && event.ctrlKey === true) ||
-      (event.keyCode >= 35 && event.keyCode <= 39)) {
-      return;
-    } else {
-      if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
-        event.preventDefault();
-      }
-    }
-  });
-
+ 
 
 
  
@@ -56,7 +44,7 @@ $(".btn-read").on("click", function (e) {
 
 });
 
-$('.feedback__btn-all').on('click', function () {
+$('.btn__all--sm, .btn__all--lg').on('click', function () {
 
   if ($(this).text() == 'Все отзывы') {
       $(this).text('Отзывов больше нет');
@@ -73,11 +61,14 @@ $('.all-prise').click(function(){
   return false;
  });
 
+ $('.btn__all--sm').click(function(){
+  $('.sm-card').slideToggle(1000);
+  return false;
+ });
 
-if(document.getElementById("only_num").value == s){
-  s = ' ';
-  s = s.replace(/^\s+|\s+$/g, '');
-}
+$('.social-link').click(function(){
+  alert('Данная ссылка ещё не привязана')
+});
 
 
 const nextIcon = '<img src="./img/next.svg" alt:"right">';

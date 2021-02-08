@@ -522,7 +522,9 @@ h3 {
     }
 
 }
-
+.btn__all--sm {
+    display: none;
+}
 .feedback__text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -575,7 +577,7 @@ h3 {
         position: relative;
         bottom: 14px;
         right: 10px;
-        cursor: pointer;
+        cursor: default;
     }
     &__btn::before {
         content:"";
@@ -603,6 +605,26 @@ h3 {
         margin-right: 5px;
     }
 }
+
+
+
+.form_style input.rf_error {
+    border-color: #d8512d;
+  }
+  .form_style .rfield_error {
+    display: block;
+    padding: 0px 10px;
+    background-color: #d8512d;
+    color: #fff;
+    font-size: 12px;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: auto;
+    right: 32px;
+    visibility: hidden;
+  }
+  
 
 .map {
     max-width: 100%;
@@ -983,6 +1005,10 @@ h3 {
     .sm {
         display: none;
     }
+    .sm-card {
+        display: none;
+    }
+    
     .hamburger:after {
         top: 10px;
     }
@@ -1064,7 +1090,11 @@ h3 {
         border: none;
         width: 100%;
     }
-    .call-data__btn {
+    .btn__all--lg {
+       display: none;
+    }
+    .btn__all--sm {
+        display: block;
         width: 100%;
         right: 0;
     }

@@ -203,7 +203,7 @@
             и профессиональный сотрудник, за что ему огромное</p>
           <button class="btn-read">Читать полностью</button>
         </div><!-- feedback__card -->
-        <div class="feedback__card">
+        <div class="feedback__card sm-card">
           <h3 class="feedback__subtitle">Светлана Васильевна </h3>
           <span class="feed-data">13.09.2019</span>
           <p class="feedback__text">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5
@@ -212,7 +212,7 @@
           </p>
           <button class="btn-read">Читать полностью</button>
         </div><!-- feedback__card -->
-        <div class="feedback__card">
+        <div class="feedback__card sm-card">
           <h3 class="feedback__subtitle">Ольга Петрова</h3>
           <span class="feed-data">11.11.2019</span>
           <p class="feedback__text">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо
@@ -221,7 +221,8 @@
           <button class="btn-read">Читать полностью</button>
         </div><!-- feedback__card -->
       </div><!-- feedback__cards -->
-      <button class="btn feedback__btn-all">Все отзывы</button>
+      <button class="btn feedback__btn-all btn__all--lg">Все отзывы</button>
+      <button class="btn feedback__btn-all btn__all--sm">Все отзывы</button>
     </div><!-- container -->
   </section>
   <!-- /.feedback -->
@@ -229,15 +230,13 @@
     <div class="container">
       <h2 class="call-data__title">Закажи переезд прямо сейчас</h2>
       <h3 class="call-data__subtitle">Мы перезвоним в течении 10 секунд</h3>
-      <form action="#" class="call-data__form">
-        <input class="data-enter" type="text" placeholder="Ваше имя">
-        <input class="data-enter" id="only_num" type="tel" placeholder="Телефон">
+      <form action="#" class="call-data__form form_check form_style">
+        <input class="data-enter rfield rline" id="user_name" type="text" placeholder="Ваше имя">
+        <input class="data-enter rfield phonefield rline" id="user_phone" type="tel" placeholder="Телефон">
         <div class="btn_form">
           <input class="call-data__btn" type="submit" value="Перезвонить мне">
-          <p><input type="checkbox" name="chec" id="chek" value="a">Даю согласие на обработку данных </p>
+          <p><input type="checkbox" class="rfield" id="check_1" name="chec" value="a">Даю согласие на обработку данных </p>
         </div>
-
-
       </form><!-- call-data__form -->
     </div>
     <!-- /.container -->
@@ -255,16 +254,16 @@
         <li><i class="check-icon">&#xe800;</i><a href="#">hello@movee.ru</a> </li>
       </ul>
       <div class="map__social">
-        <a href="#"><img src="img/social_icons/youtube.png" alt="youtube"></a>
-        <a href="#"><img src="img/social_icons/vk.png" alt="vk"></a>
-        <a href="#"><img src="img/social_icons/fb.png" alt="fb"></a>
-        <a href="#"><img src="img/social_icons/insta.png" alt="insta"></a>
+        <a href="#map" class="social-link"><img src="img/social_icons/youtube.png" alt="youtube"></a>
+        <a href="#map" class="social-link"><img src="img/social_icons/vk.png" alt="vk"></a>
+        <a href="#map" class="social-link"><img src="img/social_icons/fb.png" alt="fb"></a>
+        <a href="#map" class="social-link"><img src="img/social_icons/insta.png" alt="insta"></a>
       </div>
       <!-- /.map__social -->
     </div><!-- map__decrip -->
   </section>
   <!-- /.map -->
-  <footer class="footer">
+  <footer class="footer" id="footers">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__polish">
@@ -282,10 +281,10 @@
         </div><!-- footer__nav -->
         <div class="footer__feedback">
           <div class="footer__feedback-icon">
-            <a href="#"><img src="img/social_icons/youtube.png" alt="youtube"></a>
-            <a href="#"><img src="img/social_icons/vk.png" alt="vk"></a>
-            <a href="#"><img src="img/social_icons/fb.png" alt="fb"></a>
-            <a href="#"><img src="img/social_icons/insta.png" alt="insta"></a>
+            <a href="#footers" class="social-link"><img src="img/social_icons/youtube.png" alt="youtube"></a>
+            <a href="#footers" class="social-link"><img src="img/social_icons/vk.png" alt="vk"></a>
+            <a href="#footers" class="social-link"><img src="img/social_icons/fb.png" alt="fb"></a>
+            <a href="#footers" class="social-link"><img src="img/social_icons/insta.png" alt="insta"></a>
           </div><!-- footer__feedback-icon -->
           <a href="#">hello@movee.ru</a>
         </div>
@@ -307,7 +306,11 @@
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/is.mobile.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/formcheck.js"></script>
   <script src="js/main.js"></script>
 </body>
 
